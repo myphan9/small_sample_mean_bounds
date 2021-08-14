@@ -6,7 +6,7 @@ python -m pip install gurobipy
 ```
 The main file with examples is run.py and could be run with:   
 ```
-  python3 run.py
+python3 run.py
 ```
 
 The bound takes seconds to run for 1 sample using Gurobi (implemented in bound_Gurobi_solver.py). In order to run the bounds for 100,000 samples for simulation purposes, there are 2 methods:
