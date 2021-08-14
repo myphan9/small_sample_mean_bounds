@@ -1,9 +1,13 @@
 This is the code accompanying the paper "Towards Practical Mean Bound for Small Samples" published in the Thirty-eighth International Conference on Machine Learning (ICML 2021).
 
 Gurobipy is free and can be installed with: 
+```
 python -m pip install gurobipy
-
-The main file with examples is run.py.
+```
+The main file with examples is run.py and could be run with:   
+```
+  python3 run.py
+```
 
 The bound takes seconds to run for 1 sample using Gurobi (implemented in bound_Gurobi_solver.py). In order to run the bounds for 100,000 samples for simulation purposes, there are 2 methods:
 
