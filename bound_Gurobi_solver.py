@@ -45,6 +45,9 @@ def b_alpha_gurobi(z, alpha,  T = None, l2norm = False, lower = 0, upper = 1, nu
         T = np.array(T)
         region = model.addConstr( (x @ T - z @ T <= 0) , name='region')
     else:
+        # When lower != 0, we need to change the constraint to (x - lower)**2 <= (z - lower)**2.
+        # This current implementation is only for when lower = 0.
+        assert lower ==0
         region = model.addQConstr( (x @ x - z @ z <= 0) , name='region')
 
 
