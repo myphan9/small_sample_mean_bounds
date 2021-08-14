@@ -9,4 +9,4 @@ The bound takes seconds to run for 1 sample using Gurobi (implemented in bound_G
 
 1/ Since the bound only takes T(z) as an input, using solvers such as Gurobi it is possible to pre-compute a table that maps T(z) to the value of the bound within a reasonable amount of time. Then one could refer to the table to retrieve the bound for every sample.
 
-2/ We provide a faster implementation (with a manual solver that vectorize loops as matrix multiplications) that does not use pre-computed table in bound.py
+2/ We provide a faster implementation (with a manual solver that vectorize loops as matrix multiplications) that does not use pre-computed table in bound_manual_solver.py
