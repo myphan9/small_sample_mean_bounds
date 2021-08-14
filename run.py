@@ -1,6 +1,6 @@
 import numpy as np
-from bound import b_alpha_linear, b_alpha_l2norm
-from bound_LP_solver import b_alpha_gurobi
+from bound_manual_solver import b_alpha_linear, b_alpha_l2norm
+from bound_Gurobi_solver import b_alpha_gurobi
 from anderson import anderson
 from scipy.stats import beta, uniform, randint, dirichlet, binom, bernoulli, lognorm, poisson
 from helper import T_anderson
