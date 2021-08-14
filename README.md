@@ -5,7 +5,7 @@ python -m pip install gurobipy
 
 The main file with examples is run.py.
 
-The bound takes seconds to run for 1 sample using Gurobi (implemented in bound_LP_solver.py). In order to run the bounds for 100,000 samples for simulation purposes, there are 2 methods:
+The bound takes seconds to run for 1 sample using Gurobi (implemented in bound_Gurobi_solver.py). In order to run the bounds for 100,000 samples for simulation purposes, there are 2 methods:
 
 1/ Since the bound only takes T(z) as an input, using solvers such as Gurobi it is possible to pre-compute a table that maps T(z) to the value of the bound within a reasonable amount of time. Then one could refer to the table to retrieve the bound for every sample.
 
