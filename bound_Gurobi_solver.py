@@ -37,7 +37,7 @@ def b_alpha_gurobi(z, alpha,  T = None, l2norm = False, lower = 0, upper = 1, nu
 
     model = gp.Model()
     model.Params.LogToConsole = 0
-    # Constant term of the function f(x). This is a free continuous variable that can take positive and negative values.
+
     x = model.addMVar(n, lb=lower , ub=upper, vtype=GRB.CONTINUOUS, name="x")
     order = model.addConstrs( (x[i] - x[i+1] <= 0 for i in range(n-1)), name='order')
     if not l2norm:

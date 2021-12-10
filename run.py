@@ -9,9 +9,10 @@ from helper import T_anderson
 
 n = 6
 alpha = 0.05
+T = T_anderson(alpha, n)
+
 for i in range(10):
     z = beta(1,5).rvs(n)
-    T = T_anderson(alpha, n)
 
     print("Sample size:",n , ", alpha:", alpha)
     print("Sample:", z)
